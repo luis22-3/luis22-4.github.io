@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguer's Junior</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/imagenpresentacion.jpg');
+             background-size: cover;
+             background-position: center;
+             color: white;
+             padding: 150px 0;
+             min-height: 80vh;
+             display: flex;
+             align-items: center;
+         }
+         .menu-item {
+             transition: transform 0.3s ease;
+             height: 100%;
+         }
+         .menu-item:hover {
+             transform: scale(1.05);
+         }
+         .menu-item img {
+             height: 250px;
+             object-fit: cover;
+         }
+         .navbar {
+             background-color: rgba(43, 43, 43, 0.9) !important;
+         }
+         .footer {
+             background-color: #2b2b2b;
+             color: white;
+             padding: 40px 0;
+         }
+         .social-icons i {
+             font-size: 24px;
+             margin: 0 10px;
+             color: white;
+         }
+         .nav-link {
+             color: white !important;
+             transition: color 0.3s ease;
+         }
+         .nav-link:hover {
+             color: #ffc107 !important;
+         }
+         .custom-card {
+             border: none;
+             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+             transition: transform 0.3s ease;
+         }
+         .custom-card:hover {
+             transform: translateY(-5px);
+         }
+         .hero-content {
+             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+         }
+     </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- Navbar to be used in index.html, menu.html, and juego.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Hamburguer's Junior</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="juego.html">Juego</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pedidos.html">Pedidos y Reservaciones</a>
+                </li>
+               
+               
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Menu Section -->
+    <section class="menu-section py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Nuestro Menú Completo</h1>
+
+            <!-- Hamburguesas Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Hamburguesas</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/hamburguesaclasica.jpg" class="card-img-top" alt="Hamburguesas Clásicas">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburguesas Clásicas</h5>
+                            <ul class="list-unstyled">
+                                <li>🍔 Hamburguesa Clásica - $15.000</li>
+                                <li>🧀 Cheeseburger - $17.000</li>
+                                <li>🥓 Bacon Burger - $19.000</li>
+                                <li>🍔 Hamburguesa BBQ - $20.000</li>
+                                <li>🌱 Hamburguesa Vegana - $18.000</li>
+                                <li>🍔 Hamburguesa Picante - $21.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/hamburguesapollobbq.jpg" class="card-img-top" alt="Hamburguesas Especiales">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburguesas Especiales</h5>
+                            <ul class="list-unstyled">
+                                <li>🔥 BBQ Deluxe - $22.000</li>
+                                <li>🌶️ Spicy Master - $23.000</li>
+                                <li>🧀 Triple Cheese - $24.000</li>
+                                <li>🍔 Hamburguesa con Huevo - $25.000</li>
+                                <li>🍔 Hamburguesa de Pollo - $20.000</li>
+                                <li>🍔 Hamburguesa de Pescado - $22.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/hamburguesasaludable.jpg" class="card-img-top" alt="Hamburguesas Saludables">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburguesas Saludables</h5>
+                            <ul class="list-unstyled">
+                                <li>🥗 Hamburguesa de Quinoa - $19.000</li>
+                                <li>🥗 Hamburguesa de Lentejas - $18.000</li>
+                                <li>🥗 Hamburguesa de Garbanzos - $20.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entradas Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Entradas</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/papas_fritas.jpg" class="card-img-top" alt="Entrada 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Papas Fritas</h5>
+                            <p>Porción de papas fritas crujientes.</p>
+                            <p class="fw-bold">Precio: $4.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/arosdecebolla.jpeg" class="card-img-top" alt="Entrada 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Aros de Cebolla</h5>
+                            <p>Aros de cebolla empanizados y fritos.</p>
+                            <p class="fw-bold">Precio: $5.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/nachos.jpeg" class="card-img-top" alt="Entrada 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Nachos con Queso</h5>
+                            <p>Nachos con salsa de queso y jalapeños.</p>
+                            <p class="fw-bold">Precio: $6.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Bebidas</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/refrescos.jpeg" class="card-img-top" alt="Refresco">
+                        <div class="card-body">
+                            <h5 class="card-title">Refresco</h5>
+                            <p class="fw-bold">Precio: $2.500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/agua.jpeg" class="card-img-top" alt="Agua">
+                        <div class="card-body">
+                            <h5 class="card-title">Agua</h5>
+                            <p class="fw-bold">Precio: $1.500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/jugos.jpeg" class="card-img-top" alt="Jugo Natural">
+                        <div class="card-body">
+                            <h5 class="card-title">Jugo Natural</h5>
+                            <p class="fw-bold">Precio: $3.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/Cerveza-artesanal.jpg" class="card-img-top" alt="Cerveza-artesanal">
+                        <div class="card-body">
+                            <h5 class="card-title">Cervezas artesanales</h5>
+                            <p class="fw-bold">Precio: $9.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/cervezas-importadas.webp" class="card-img-top" alt="cervezas-importadas">
+                        <div class="card-body">
+                            <h5 class="card-title">Cervezas importadas</h5>
+                            <p class="fw-bold">Precio: $12.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container text-center py-3">
+        <p>© 2024 Hamburguer's Junior. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS (optional, but recommended for full functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
